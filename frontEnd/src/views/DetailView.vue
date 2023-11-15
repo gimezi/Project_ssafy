@@ -23,7 +23,7 @@ const article = ref(null)
 onMounted(() => {
     axios({
         method: 'get',
-        url: `${store.API_URL}api/v1/articles/${route.params.id}/`
+        url: `${store.API_URL}/api/v1/articles/${route.params.id}/`
     }) .then((response) => {
         article.value = response.data
     }) .catch((error) => {console.log(error)})

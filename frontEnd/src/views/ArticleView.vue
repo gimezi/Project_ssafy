@@ -3,7 +3,7 @@
         <p>게시판</p>
         <nav>
             <li><RouterLink :to="{ name:'create' }">NEW</RouterLink></li>
-            <li><RouterLink :to="{ name:'map' }">지도 보기</RouterLink></li>
+            <li><RouterLink :to="{ name:'map'}">지도 보기</RouterLink></li>
         </nav>
         
         <ArticleList/>
